@@ -74,7 +74,7 @@ script.onload = () => {
         iframe.style.width = '100px';
         iframe.style.height = '100px';
         iframe.style.maxWidth = '100vw';
-
+        iframe.style.marginRight = '10px';
         iframe.src = `https://localhost:52329/helpbot/${org}/${library}/${category}/${colour}`;
         document.body.appendChild(iframe);
     }
