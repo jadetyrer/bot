@@ -1,4 +1,3 @@
-
 const script = document.createElement('script');
 
 var org = document.getElementById("helper").getAttribute("organisation");
@@ -40,7 +39,7 @@ script.onload = () => {
         iframe.style.maxWidth = '100vw';
         iframe.style.marginRight = '10px';
 
-        iframe.src = `https://localhost:52329/helpbot/${org}/${library}/${category}/${colour}`;
+        iframe.src = `https://localhost:52329/helpbot/${org}/${library}/${category}/${colour}&embedded=true`;
         document.body.appendChild(iframe);
     }
 };
